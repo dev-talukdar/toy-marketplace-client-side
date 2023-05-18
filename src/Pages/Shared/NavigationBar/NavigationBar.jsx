@@ -20,7 +20,7 @@ const NavigationBar = () => {
                         <Link className="hover:text-orange-600" to={'blog'}>Blog</Link>
                     </ul>
                 </div> 
-                <img className='' src={logo} alt="" />
+                <Link to={'/'}><img className='' src={logo} alt="" /></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 gap-5">
