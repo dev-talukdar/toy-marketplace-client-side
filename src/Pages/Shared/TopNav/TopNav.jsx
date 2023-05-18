@@ -31,14 +31,14 @@ const TopNav = () => {
                     <Link className='hover:text-orange-600 ' to={'wishList'}>
                         <div className='flex gap-4 items-center'><span className='text-orange-600'>
                         <FaHeart></FaHeart></span>
-                            <p>My Wish List</p>
+                            <p>My Wish List (0)</p>
                         </div>
                     </Link> 
 
                     <Link className='hover:text-orange-600 ' to={'shoppingCart'}>
                         <div className='flex gap-4 items-center'> <span className='text-orange-600'>
                        < FaShoppingCart></FaShoppingCart></span>
-                            <p>My Bag</p>
+                            <p>My Bag (0)</p>
                         </div>
                     </Link> 
                 </ul>

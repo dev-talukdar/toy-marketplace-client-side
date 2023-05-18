@@ -1,13 +1,13 @@
-import { Link } from "react-router-dom"; 
-import TopNav from "../TopNav/TopNav";
+import { Link } from "react-router-dom";  
+import { FaHeart, FaShoppingCart, FaUserAlt } from "react-icons/fa";
+import logo from '../../../../public/logo.png'
 
 
 
 const NavigationBar = () => {
     return (
-        <div>
-            <TopNav></TopNav>
-        <div className="navbar bg-base-200 ">
+         
+        <div  className="navbar bg-base-200 ">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -16,24 +16,47 @@ const NavigationBar = () => {
                     <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                         <Link className="hover:text-orange-600" to={'allCars'}>All Cars</Link>
                         <Link className="hover:text-orange-600" to={'myCars'}>My Cars</Link>
-                        <Link className="hover:text-orange-600" to={'addCars'}>Add A Car</Link>
+                        <Link className="hover:text-orange-600" to={'addCars'}>Add a Car</Link>
                         <Link className="hover:text-orange-600" to={'blog'}>Blog</Link>
                     </ul>
                 </div> 
+                <img className='' src={logo} alt="" />
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 gap-5">
                     <Link className="hover:text-orange-600"  to={'allCars'}>All Cars</Link>
                     <Link className="hover:text-orange-600" to={'myCars'}>My Cars</Link>
-                    <Link className="hover:text-orange-600" to={'addCars'}>Add A Car</Link>
+                    <Link className="hover:text-orange-600" to={'addCars'}>Add a Car</Link>
                     <Link className="hover:text-orange-600" to={'blog'}>Blog</Link>
                 </ul>
             </div>
-            <div className="navbar-end">
-                <a className="btn">Get started</a>
+            <div className="navbar-end mx-8 hidden lg:flex">
+
+                <ul className="menu menu-horizontal px-1 gap-5 ">
+                    <Link className='hover:text-orange-600 ' to={'login'}>
+                        <div className='flex gap-4 items-center'><span className='text-orange-600'>
+                            <FaUserAlt></FaUserAlt></span>
+                            <p>Log In</p>
+                        </div>
+                    </Link>
+
+                    <Link className='hover:text-orange-600 ' to={'wishList'}>
+                        <div className='flex gap-4 items-center'><span className='text-orange-600'>
+                        <FaHeart></FaHeart></span>
+                            <p>My Wish List (0)</p>
+                        </div>
+                    </Link> 
+
+                    <Link className='hover:text-orange-600 ' to={'shoppingCart'}>
+                        <div className='flex gap-4 items-center'> <span className='text-orange-600'>
+                       < FaShoppingCart></FaShoppingCart></span>
+                            <p>My Bag (0)</p>
+                        </div>
+                    </Link> 
+                </ul>
             </div>
         </div>
-        </div>
+         
     );
 };
 
