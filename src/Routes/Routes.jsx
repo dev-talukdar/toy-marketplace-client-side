@@ -5,6 +5,11 @@ import AllCars from "../Pages/AllCars/AllCars";
 import AddACars from "../Pages/AddACars/AddACars";
 import MyCars from "../Pages/MyCars/MyCars";
 import Blog from "../Pages/Blog/Blog";
+import ShoppingCart from "../Pages/Shared/ShoppingCart/ShoppingCart";
+import WishList from "../Pages/WishList/WishList";
+import Login from "../Pages/Shared/Login/Login";
+import StoreLocator from "../Pages/StoreLocator/StoreLocator";
+import GuestServices from "../Pages/GuestServices/GuestServices";
 
 const router = createBrowserRouter([
     {
@@ -16,20 +21,44 @@ const router = createBrowserRouter([
                 element: <Home></Home>
             },
             {
-                path: 'all_cars',
+                path: 'allCars',
                 element: <AllCars></AllCars>
             },
             {
-                path: 'add_cars',
+                path: 'addCars',
                 element: <AddACars></AddACars>
             },
             {
-                path: 'my_cars',
+                path: 'myCars',
                 element: <MyCars></MyCars>
             },
             {
                 path: 'blog',
                 element: <Blog></Blog>
+            },
+            {
+                path: 'login',
+                element: <Login></Login>
+            },
+            {
+                path: 'StoreLocator',
+                element: <StoreLocator></StoreLocator>
+            },
+            {
+                path: 'guestServices',
+                element: <GuestServices></GuestServices>
+            },
+            {
+                path: 'blog',
+                element: <Blog></Blog>
+            },
+            {
+                path: 'wishList',
+                element: <WishList></WishList>
+            },
+            {
+                path: 'shoppingCart',
+                element: <ShoppingCart></ShoppingCart>
             },
         ]
     }
