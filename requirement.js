@@ -1,19 +1,20 @@
 `
 Main Requirements
-Focus on making the website visually appealing. Ensure that
+
+1.  Focus on making the website visually appealing. Ensure that
 
 Color contrast is pleasing to the eye
 The website does not have a gobindo design
 The website has proper alignment and space
 If needed, customize the design of any component you are taking from any component library. (For example, you are using daisy ui & have taken a card component from Daisy, if needed, customize the styling of the card to make it reasonable rather than just copy & paste it.) 
 
-Make sure to keep the navbar and footer on all the pages except on the 404-page. Create a reasonable and meaningful footer. (including website logo, name, copyright, some contact information, social media links, address, etc.)--- not done
+2.  Make sure to keep the navbar and footer on all the pages except on the 404-page. Create a reasonable and meaningful footer. (including website logo, name, copyright, some contact information, social media links, address, etc.)--- not done
 
-Your website should have a navbar with the Website logo, Website name, Home, All Toys, My Toys, Add A Toy, Blogs, and User profile picture.
+3.  Your website should have a navbar with the Website logo, Website name, Home, All Toys, My Toys, Add A Toy, Blogs, and User profile picture.
 Note: The User profile picture, Add A Toy and My Toys on the navbar are conditional based on login. If the user is logged in, the navbar will show the profile picture; otherwise, it will show the Login button. If the username is available, the user's name will be visible when the mouse hovers over the profile picture.
 
 
-Login & Registration systems: On the Registration and Login pages, display relevant error messages when necessary.
+4.  Login & Registration systems: On the Registration and Login pages, display relevant error messages when necessary.
 
 Login Page: When a user clicks on the login button, they will be redirected to the login page having the following:
 
@@ -31,7 +32,7 @@ Photo URL
 Note: Do not enforce the email verification method, as it will inconvenience the examiner. If you want, you can add email verification after receiving the assignment result.
 
 
- Home page:
+5.   Home page:
 
 Banner section -A slider/banner/ a meaningful section. -- done 
 
@@ -55,7 +56,7 @@ Note: When a user is not logged in and if he/ she clicks on the View Details but
 
 Extra Section: Add two relevant sections. Try to make them attractive.
 
- Blogs page: Create a Blog where you will have to answer the following questions:
+6.   Blogs page: Create a Blog where you will have to answer the following questions:
 
 What is an access token and refresh token? How do they work and where should we store them on the client-side?
 Compare SQL and NoSQL databases?
@@ -63,7 +64,7 @@ What is express js? What is Nest JS (google it)?
 What is MongoDB aggregate and how does it work (google it)?
 
 
- All Toys page: Create an All Toys page where you will see the toys all the users have added in the tabular form. Each row of the All Toys table/list will have the following information:
+7.   All Toys page: Create an All Toys page where you will see the toys all the users have added in the tabular form. Each row of the All Toys table/list will have the following information:
 
 Seller: (if available) show the name of the person who posted the toy
 Toy Name
@@ -80,14 +81,14 @@ Implement a search system on this page, based on the Toy name.
 Without logging in, if a user clicks on the View Details button, they will be redirected to the Login Page. Make sure to take the user to the Details Page after the user successfully logs in.
 
 
-Single toy details route will be a private route:
+8.  Single toy details route will be a private route:
 
 After clicking on the View Details button, he/ she will be redirected to the Toys Details route ( /toy/:id ) containing the information ( picture, toy name, seller name, seller email, price, rating, available quantity, and detail description)
 
 (optional) If possible, display the view details in a modal
 
 
- Add A Toy page will be a private route:
+9.   Add A Toy page will be a private route:
 
 Create an Add A Toy page where there will be a form having the following fields:
 
@@ -101,7 +102,7 @@ Rating,
 Available quantity
 Detail description
 
-My Toys page will be private routes: If a user logs in, they will see the My Toys page, which it will show all the toys information they have added from the Add A Toy page in a tabular form. Each row will have an update and delete button.
+10.  My Toys page will be private routes: If a user logs in, they will see the My Toys page, which it will show all the toys information they have added from the Add A Toy page in a tabular form. Each row will have an update and delete button.
 
 Update Action - If they click the update button, they can update the Toy information (Price, available quantity, Detail description)
 
@@ -113,14 +114,18 @@ Delete Action - If they click the delete button, the Toy will be removed from th
 
 > **Note:** If a user logs in they will only see the toys they have added. The user cannot see the toys other users added.
 
-For all the CRUD operations, show relevant toast/ notification/ anything with a meaningful message
+11.  For all the CRUD operations, show relevant toast/ notification/ anything with a meaningful message
 
-404 page:
+12.  404 page:
 
 Create a 404 page. Add any interesting jpg/ gif on the 404 page. Do not add header & footer on this page. Just add a jpg/ gif & a Back to home button. TheBack to home button will redirect the user to the home page.
 
 
-Use the Environment variable to hide the Firebase config keys and Mongodb credentials.
+13.  Use the Environment variable to hide the Firebase config keys and Mongodb credentials.
+
+
+
+-------------------------------------------------->
 
 Bonus Requirements
 Commits & readme:

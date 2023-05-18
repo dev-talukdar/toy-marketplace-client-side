@@ -7,14 +7,14 @@ import MyCars from "../Pages/MyCars/MyCars";
 import Blog from "../Pages/Blog/Blog";
 import ShoppingCart from "../Pages/Shared/ShoppingCart/ShoppingCart";
 import WishList from "../Pages/WishList/WishList";
-import Login from "../Pages/Shared/Login/Login";
-import StoreLocator from "../Pages/StoreLocator/StoreLocator";
-import GuestServices from "../Pages/GuestServices/GuestServices";
+import Login from "../Pages/Shared/Login/Login"; 
+import NotFound from "../Pages/NotFound/NotFound";
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Main></Main>,
+        errorElement: <NotFound></NotFound>,
         children: [
             {
                 path: '/',
@@ -39,14 +39,6 @@ const router = createBrowserRouter([
             {
                 path: 'login',
                 element: <Login></Login>
-            },
-            {
-                path: 'StoreLocator',
-                element: <StoreLocator></StoreLocator>
-            },
-            {
-                path: 'guestServices',
-                element: <GuestServices></GuestServices>
             },
             {
                 path: 'blog',
