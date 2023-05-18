@@ -1,7 +1,11 @@
- import logo from '../../../../public/logo.png'
+ import { Link } from 'react-router-dom'
+import logo from '../../../../public/logo.png'
+import BottomNav from '../BottomNav/BottomNav';
 
 const Footer = () => {
     return (
+        <div>
+            <BottomNav></BottomNav>
         <footer className="footer p-10 bg-base-200 text-base-content">
   <div>
      <img src={logo} alt="Wheels ville the no. 1 choice for model cars!" />
@@ -10,29 +14,30 @@ const Footer = () => {
   <div>
     <span className="footer-title">Directlinks</span> 
 
-    <a className="link link-hover">DEALS</a> 
-    <a className="link link-hover">Categories</a> 
-    <a className="link link-hover">Brands</a> 
-    <a className="link link-hover">Novelties</a>
-    <a className="link link-hover">Top Seller</a>
+    <Link className='hover:text-orange-600'>DEALS</Link>
+    <Link className='hover:text-orange-600'>Categories</Link>
+    <Link className='hover:text-orange-600'>Brands</Link>
+    <Link className='hover:text-orange-600'>Noveltie</Link>
+    <Link className='hover:text-orange-600'>Top Selle</Link>
   </div> 
 
   <div>
     <span className="footer-title">Customer service</span> 
-    <a className="link link-hover">Customer information</a> 
-    <a className="link link-hover">Cancellation right</a> 
-    <a className="link link-hover">Certificate Database</a> 
-    <a className="link link-hover">Press kit</a>
+    <Link className='hover:text-orange-600'>Customer information</Link>
+    <Link className='hover:text-orange-600'>Cancellation right</Link>
+    <Link className='hover:text-orange-600'>Certificate Database</Link>
+    <Link className='hover:text-orange-600'>Press ki</Link>
   </div> 
   <div>
     <span className="footer-title">Shopping</span> 
-    <a className="link link-hover">Terms and conditions</a> 
-    <a className="link link-hover">Data privacy statement</a> 
-    <a className="link link-hover">Terms of delivery</a>
-    <a className="link link-hover">Payment methods</a>
-    <a className="link link-hover">Battery Directive</a>
+    <Link className='hover:text-orange-600'>Terms and conditions</Link>
+    <Link className='hover:text-orange-600'>Data privacy statement</Link>
+    <Link className='hover:text-orange-600'>Terms of deliver</Link>
+    <Link className='hover:text-orange-600'>Payment method</Link>
+    <Link className='hover:text-orange-600'>Battery Directiv</Link>
   </div>
 </footer>
+</div>
     );
 };
 
