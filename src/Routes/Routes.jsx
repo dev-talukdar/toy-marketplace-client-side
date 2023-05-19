@@ -9,6 +9,7 @@ import ShoppingCart from "../Pages/Shared/ShoppingCart/ShoppingCart";
 import WishList from "../Pages/WishList/WishList";
 import Login from "../Pages/Shared/Login/Login"; 
 import NotFound from "../Pages/NotFound/NotFound";
+import Register from "../Pages/Shared/Register/Register";
 
 const router = createBrowserRouter([
     {
@@ -41,8 +42,8 @@ const router = createBrowserRouter([
                 element: <Login></Login>
             },
             {
-                path: 'blog',
-                element: <Blog></Blog>
+                path: 'signup',
+                element: <Register></Register>
             },
             {
                 path: 'wishList',

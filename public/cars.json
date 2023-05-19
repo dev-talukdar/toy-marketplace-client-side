@@ -1,0 +1,57 @@
+[
+      {
+        "id": 1,
+        "picture": "car1.jpg",
+        "name": "Sports Car",
+        "price": 50000,
+        "rating": 4.5,
+        "detailsButton": "View Details",
+        "subcategory": "Sports Cars"
+      },
+      {
+        "id": 2,
+        "picture": "car2.jpg",
+        "name": "Police car",
+        "price": 40000,
+        "rating": 4.2,
+        "detailsButton": "View Details",
+        "subcategory": "SUVs"
+      },
+      {
+        "id": 3,
+        "picture": "car3.jpg",
+        "name": "Ambulance",
+        "price": 60000,
+        "rating": 4.8, 
+        "detailsButton": "View Details",
+        "subcategory": "Sedans"
+      },
+      {
+        "id": 4,
+        "picture": "car4.jpg",
+        "name": "Van",
+        "price": 25000,
+        "rating": 4.0, 
+        "detailsButton": "View Details",
+        "subcategory": "Hatchbacks"
+      },
+      {
+        "id": 5,
+        "picture": "car5.jpg",
+        "name": "Bus",
+        "price": 55000,
+        "rating": 4.6,        
+        "detailsButton": "View Details",
+        "subcategory": "Electric Cars"
+      },
+      {
+        "id": 6,
+        "picture": "car6.jpg",
+        "name": "Truck",
+        "price": 45000,
+        "rating": 4.3,        
+        "detailsButton": "View Details",
+        "subcategory": "Convertibles"
+      }
+    ] 
+  
