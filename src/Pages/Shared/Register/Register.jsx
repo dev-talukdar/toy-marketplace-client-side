@@ -1,22 +1,49 @@
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../../Provider/AuthProvider";
 
  
 
 const Register = () => {
+    const [error, setError] = useState('')
+    const {createUser} = useContext(AuthContext)
+
+
     const handleSignUp = event => { 
         event.preventDefault();
+        
         const form = event.target;
         const name = form.name.value;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(name, email, password)
+        const confirm = form.confirm.value;
+        const photo = form.photoUrl.value;
+        console.log(name, email, password, confirm, photo)
 
-        // createUser(email, password)
-        .then(result =>{
-            const user  =result.user;
-            console.log(user)
+        setError('')
+
+        if(password !== confirm){
+            setError('Your password did not match')
+            return
+        }
+        else if(password.length < 6){
+            setError('Your password should be 6 character longer')
+            return 
+        }
+
+        createUser(email, password)
+        .then(result => {
+            const loggedUser = result.user;
+            console.log(loggedUser)
+            form.reset(); 
         })
-        .then(error => console.log(error))
+        .catch(error => {
+            console.log(error);
+            setError(error.message);
+            
+        })
+
+        
 
     }
 
@@ -34,28 +61,36 @@ const Register = () => {
                             <label className="label">
                                 <span className="label-text">Name</span>
                             </label>
-                            <input type="text" name='name' placeholder="Enter your name" className="input input-bordered" />
+                            <input type="text" name='name' placeholder="Enter your name" className="input input-bordered" required />
                         </div>
 
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Email</span>
                             </label>
-                            <input type="text" name='email' placeholder="Enter your email" className="input input-bordered" />
+                            <input type="text" name='email' placeholder="Enter your email" className="input input-bordered" required />
+                        </div>
+                        <div className="form-control">
+                            <label className="label">
+                                <span className="label-text">Password</span>
+                            </label>
+                            <input type="password" name='password' placeholder="Enter your password" className="input input-bordered" required />
+                           
                         </div>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Confirm Password</span>
                             </label>
-                            <input type="password" name='password' placeholder="Enter your password" className="input input-bordered" />
+                            <input type="password" name='confirm' placeholder="Enter your password" className="input input-bordered" required />
                            
                         </div>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Photo</span>
                             </label>
-                            <input type="text" name='photoUrl' placeholder="Enter url of the photo" className="input input-bordered" />
+                            <input type="text" name='photoUrl' placeholder="Enter url of the photo" className="input input-bordered" required />
                         </div>
+                    <p><small className="text-red-500 text-center">{error}</small></p>
 
                         <div className="form-control mt-6"> 
                             <input className="btn btn-primary" type="submit" value='Sign up' />

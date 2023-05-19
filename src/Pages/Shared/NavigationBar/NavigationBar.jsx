@@ -1,10 +1,27 @@
 import { Link } from "react-router-dom";  
 import { FaHeart, FaShoppingCart, FaUserAlt } from "react-icons/fa";
 import logo from '../../../../public/logo.png'
+import { useContext } from "react";
+import { AuthContext } from "../../../Provider/AuthProvider";
 
 
 
 const NavigationBar = () => {
+    const {user, logOut} = useContext(AuthContext)  
+
+    const handleLogOut =() => {
+        logOut()
+        .then(result => {
+            console.log(result)
+        })
+        .catch(error => console.error(error))
+    }
+
+    const handleLogIn = () => { 
+         
+    };
+
+
     return (
          
         <div  className="navbar bg-base-200 ">
@@ -36,7 +53,9 @@ const NavigationBar = () => {
                     <Link className='hover:text-orange-600 ' to={'login'}>
                         <div className='flex gap-4 items-center'><span className='text-orange-600'>
                             <FaUserAlt></FaUserAlt></span>
-                            <p>Log In</p>
+                            <button className="text-pink-400" onClick={handleLogIn}>Log In </button> 
+                            {user && <span className="text-purple-600">{user.email} <button className="text-pink-400" onClick={handleLogOut}>Log Out </button> </span>}
+                            
                         </div>
                     </Link>
 

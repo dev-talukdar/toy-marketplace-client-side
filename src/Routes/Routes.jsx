@@ -10,6 +10,7 @@ import WishList from "../Pages/WishList/WishList";
 import Login from "../Pages/Shared/Login/Login"; 
 import NotFound from "../Pages/NotFound/NotFound";
 import Register from "../Pages/Shared/Register/Register";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
     {
@@ -27,11 +28,11 @@ const router = createBrowserRouter([
             },
             {
                 path: 'addCars',
-                element: <AddACars></AddACars>
+                element: <PrivateRoute><AddACars></AddACars></PrivateRoute>
             },
             {
                 path: 'myCars',
-                element: <MyCars></MyCars>
+                element: <PrivateRoute><MyCars></MyCars></PrivateRoute>
             },
             {
                 path: 'blog',

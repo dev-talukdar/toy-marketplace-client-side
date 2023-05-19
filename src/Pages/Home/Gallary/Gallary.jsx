@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 
 const Gallary = () => {
+  
   const [gallery, setGallery] = useState([]);
   const [showAllCards, setShowAllCards] = useState(false);
 
@@ -21,7 +22,7 @@ const Gallary = () => {
       <h2 className="text-center text-4xl font-bold mt-16 mb-12">Trending Cars</h2>
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {displayedCards.map(cars => (
-          <GallaryCard key={cars._id} cars={cars} />
+          <GallaryCard key={cars.id} cars={cars} />
         ))}
       </div>
       {!showAllCards && (

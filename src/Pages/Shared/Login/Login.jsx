@@ -1,27 +1,49 @@
+import { useContext } from "react";
 import { FaGoogle } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../../Provider/AuthProvider";
+import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+import app from "../../../Firebase/firebase.config";
 
  
 
 const Login = () => {
+    const {signIn} = useContext(AuthContext)
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const from = location.state?.from?.pathname || '/';
+
+    const auth = getAuth(app)
+    const googleProvider = new GoogleAuthProvider()
 
     const handleLogin = event => {
-        event.preventDefault()
-
-       
+        event.preventDefault() 
 
         const form = event.target; 
         const email = form.email.value;
         const password = form.password.value;
-        console.log( email, password)
+        console.log( email, password)        
 
-        // signIn(email, password)
+        signIn(email, password)
         .then(result => {
-const user = result.user;
-console.log(user)
+            const loggedUser = result.user;
+            console.log(loggedUser);
+            form.reset();
+            navigate(from)
         })
-        .catch(error => console.log(error))
+        .catch(error => {
+            console.log(error)
+        }) 
+    }
 
+    const handleGoogleSignIn = () => {
+        signInWithPopup(auth, googleProvider)
+        .then(result => {
+            const user = result.user
+            console.log(user)
+            navigate(from)
+        })
     }
     
     return (
@@ -57,7 +79,7 @@ console.log(user)
                         <h4 className='font-bold text-center mb-8'>Login with</h4>
                         
                         <div className='grid grid-row-3 mb-8 mx-3 gap-3'>  
-                            <button className="btn btn-outline btn-error text-3xl"><FaGoogle></FaGoogle></button>  
+                            <button onClick={handleGoogleSignIn} className="btn btn-outline btn-error text-3xl"><FaGoogle></FaGoogle></button>  
 
                         </div>
                     </div>
