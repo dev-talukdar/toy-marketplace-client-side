@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import MyCarRow from "./MyCarRow";
+import Swal from "sweetalert2";
 
 
 
@@ -18,9 +19,32 @@ const MyCars = () => {
             });
     }, []);
 
+    const handleDelete = id => {
+        const proceed = confirm 
+        if(proceed) {
+           fetch(`http://localhost:5000/addCar/${id}`, {
+               method: 'DELETE'
+           })
+           .then(res => res.json())
+           .then(data => {
+               console.log(data)
+               if(data.deletedCount > 0){
+                   Swal.fire({
+                       title: "Deleted",
+                       text: "Car deleted successfully",
+                       icon: "success",
+                       confirmButtonText: "Great" 
+                   })
+                   const remaining = addCar.filter(car => car._id !==id)
+                   setAddCar(remaining);
+               }
+           })
+        }
+   }
+
     return (
         <div className="container mx-auto mt-16 mb-16">
-            <h2>this is my cars page: {addCar.length}  </h2>
+            
 
             <div className="overflow-x-auto w-full">
                 <table className="table w-full">
@@ -52,6 +76,7 @@ const MyCars = () => {
                             addCar.map(addedCar => <MyCarRow
                             key={addedCar._id}
                             addedCar = {addedCar}
+                            handleDelete={handleDelete}
                             ></MyCarRow>)
                         }
                     </tbody>

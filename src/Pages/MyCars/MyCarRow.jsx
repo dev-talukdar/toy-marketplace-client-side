@@ -1,21 +1,10 @@
-import { FaPen, FaRegTimesCircle } from "react-icons/fa"; 
+import { FaPen, FaRegTimesCircle } from "react-icons/fa";  
 
 
-const MyCarRow = ({ addedCar }) => {
+const MyCarRow = ({ addedCar, handleDelete }) => {
     const { _id, photoUrl, productName, sellerName, email, subCategory, price, rating, availableQuantity } = addedCar;
 
-    const handleDelete = id => {
-         const proceed = confirm('are you sure ?')
-         if(proceed) {
-            fetch(`http://localhost:5000/addCar/${id}`, {
-                method: 'DELETE'
-            })
-            .then(res => res.json())
-            .then(data => {
-                console.log(data)
-            })
-         }
-    }
+    
     return (
         <tr>
             <th>
