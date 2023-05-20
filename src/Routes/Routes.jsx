@@ -29,10 +29,12 @@ const router = createBrowserRouter([
             {
                 path: 'addCars',
                 element: <PrivateRoute><AddACars></AddACars></PrivateRoute>
+                
             },
             {
                 path: 'myCars',
-                element: <PrivateRoute><MyCars></MyCars></PrivateRoute>
+                element: <PrivateRoute><MyCars></MyCars></PrivateRoute>,
+                loader: () => fetch('http://localhost:5000/cars')
             },
             {
                 path: 'blog',

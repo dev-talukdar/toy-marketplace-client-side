@@ -7,7 +7,7 @@ const Gallary = () => {
   const [showAllCards, setShowAllCards] = useState(false);
 
   useEffect(() => {
-    fetch('https://toy-marketplace-server-side-sigma.vercel.app/cars')
+    fetch('https://toy-marketplace-server-side-c90aajzhg-dev-talukdar.vercel.app/cars')
       .then(res => res.json())
       .then(data => setGallery(data))
     

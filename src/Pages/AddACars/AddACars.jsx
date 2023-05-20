@@ -34,7 +34,7 @@ const AddACars = () => {
                     title: "Success",
                     text: "A new car added successfully",
                     icon: "success",
-                    confirmButtonText: "cool",
+                    confirmButtonText: "Great" 
                 })
              }
             })
