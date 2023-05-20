@@ -1,5 +1,6 @@
 import HomeBannerOne from "../../HomeBannerOne/HomeBannerOne";
 import Banner from "../../Shared/Banner/Banner";
+import CategoryCars from "../CategoryCars/CategoryCars";
 import Gallary from "../Gallary/Gallary";
 
  
@@ -12,6 +13,7 @@ const Home = () => {
             <HomeBannerOne></HomeBannerOne>
            <Banner></Banner>
            <Gallary></Gallary>
+           <CategoryCars></CategoryCars>
         </div>
     );
 };

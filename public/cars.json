@@ -1,207 +1,292 @@
 [
     {
-        "_id": 1,
-        "picture": "https://static.toiimg.com/thumb/resizemode-4,width-1200,height-900,msid-76426693/76426693.jpg",
+        
+        "subPicture": "https://static.toiimg.com/thumb/resizemode-4,width-1200,height-900,msid-76426693/76426693.jpg",
         "name": "Car",
         "price": 5,
+        "seller_name": "Disney inc",
+        "seller_email": "vendor@company.com",
+        "quantity": 121,
+        "rating": 4.5,
+        "detailsButton": "View Details" ,
+        "category": "Car"
+    },
+    {
+                
+        "subPicture": "https://cdn.shopify.com/s/files/1/0011/8367/8476/products/dezire1_693270bb-93f5-4398-a052-892dc295bf04.png",
+        "name": "Sedan Car",
+        "price": 5.6,
+        "seller_name": "Disney inc",
+        "seller_email": "vendor@company.com",
+        "quantity": 324,
         "rating": 4.5,
         "detailsButton": "View Details",
-        "subcategory": [
-            {
-                "subId": 7,
-                "subPicture": "https://cdn.shopify.com/s/files/1/0011/8367/8476/products/dezire1_693270bb-93f5-4398-a052-892dc295bf04.png",
-                "subName": "Sedan Car",
-                "subPrice": 5.6,
-                "subRating": 4.5,
-                "subCategoryButton": "View Details"
-            },
-            {
-                "subId": 8,
-                "subPicture": "https://static-01.daraz.com.bd/p/37b5234ccdf3a5ef4bcc3358e4d1cc4f.jpg_720x720.jpg_.webp",
-                "subName": "Sport Utility Vehicle",
-                "subPrice": 4.45,
-                "subRating": 4.5,
-                "subCategoryButton": "View Details"
-            },
-            {
-                "subId": 9,
-                "subPicture": "https://image.smythstoys.com/original/desktop/147513.jpg",
-                "subName": "Convertible Car",
-                "subPrice": 6.35,
-                "subRating": 4.5,
-                "subCategoryButton": "View Details"
-            }
-        ]
+        "category": "Car"
     },
     {
-        "_id": 2,
-        "picture": "https://images-na.ssl-images-amazon.com/images/I/51FojUoauHL._SL500_._AC_SL500_.jpg",
+        
+        "subPicture": "https://static-01.daraz.com.bd/p/37b5234ccdf3a5ef4bcc3358e4d1cc4f.jpg_720x720.jpg_.webp",
+        "name": "Sport Utility Vehicle",
+        "price": 4.45,
+        "seller_name": "Disney inc",
+        "seller_email": "vendor@company.com",
+        "quantity": 634,
+        "rating": 4.5,
+        "detailsButton": "View Details",
+        "category": "Car"
+    },
+    {
+        
+        "subPicture": "https://image.smythstoys.com/original/desktop/147513.jpg",
+        "name": "Convertible Car",
+        "price": 6.35,
+        "seller_name": "Disney inc",
+        "seller_email": "vendor@company.com",
+        "quantity": 352,
+        "rating": 4.5,
+        "detailsButton": "View Details",
+        "category": "Car"
+    },
+    {
+        
+        "subPicture": "https://images-na.ssl-images-amazon.com/images/I/51FojUoauHL._SL500_._AC_SL500_.jpg",
         "name": "Police car",
         "price": 4.7,
+        "seller_name": "Disney inc",
+        "seller_email": "vendor@company.com",
+        "quantity": 431,
         "rating": 4.2,
         "detailsButton": "View Details",
-        "subcategory": [
-            {
-                "subId": 10,
-                "subPicture": "https://cdn.shopify.com/s/files/1/0011/8367/8476/products/PoliceSedan5_300x@2x.png",
-                "subName": "Sedan Police Car",
-                "subPrice": 5.15,
-                "subRating": 4.5,
-                "subCategoryButton": "View Details"
-            },
-            {
-                "subId": 11,
-                "subPicture": "https://www.puissance12.com/2261-large_default/jeep-police-electrique-pour-enfants-12-volts-avec-telecommande-parentale-1-place-voiture-de-police-electrique-pour-enfants-12-vo.jpg",
-                "subName": "SUV Police Vehicle",
-                "subPrice": 4.685,
-                "subRating": 4.5,
-                "subCategoryButton": "View Details"
-            },
-            {
-                "subId": 12,
-                "subPicture": "https://ae01.alicdn.com/kf/S75a9fb9a25154c6fb18904915f93806fl.jpg",
-                "subName": "Interceptor Police Car",
-                "subPrice": 6.5,
-                "subRating": 4.5,
-                "subCategoryButton": "View Details"
-            }
-        ]
+        "category": "Police Car"
     },
     {
-        "_id": 3,
-        "picture": "https://media.karousell.com/media/photos/products/2022/3/19/toy_ambulance_1647649973_31d648b4_progressive.jpg",
+                
+        "subPicture": "https://cdn.shopify.com/s/files/1/0011/8367/8476/products/PoliceSedan5_300x@2x.png",
+        "name": "Sedan Police Car",
+        "price": 5.15,
+        "seller_name": "Disney inc",
+        "seller_email": "vendor@company.com",
+        "quantity": 293,
+        "rating": 4.5,
+        "detailsButton": "View Details",
+        "category": "Police Car"
+    },
+    {
+        
+        "subPicture": "https://www.puissance12.com/2261-large_default/jeep-police-electrique-pour-enfants-12-volts-avec-telecommande-parentale-1-place-voiture-de-police-electrique-pour-enfants-12-vo.jpg",
+        "name": "SUV Police Vehicle",
+        "price": 4.685,
+        "seller_name": "Disney inc",
+        "seller_email": "vendor@company.com",
+        "quantity": 139,
+        "rating": 4.5,
+        "detailsButton": "View Details",
+        "category": "Police Car"
+    },
+    {
+        
+        "subPicture": "https://ae01.alicdn.com/kf/S75a9fb9a25154c6fb18904915f93806fl.jpg",
+        "name": "Interceptor Police Car",
+        "price": 6.5,
+        "seller_name": "Disney inc",
+        "seller_email": "vendor@company.com",
+        "quantity": 642,
+        "rating": 4.5,
+        "detailsButton": "View Details",
+        "category": "Police Car"
+    },
+    {
+        
+        "subPicture": "https://media.karousell.com/media/photos/products/2022/3/19/toy_ambulance_1647649973_31d648b4_progressive.jpg",
         "name": "Ambulance",
         "price": 6.2,
+        "seller_name": "Disney inc",
+        "seller_email": "vendor@company.com",
+        "quantity": 382,
         "rating": 4.8,
         "detailsButton": "View Details",
-        "subcategory": [
-            {
-                "subId": 13,
-                "subPicture": "https://st4.depositphotos.com/18588246/20454/i/600/depositphotos_204549414-stock-photo-toy-metal-car-children-adults.jpg",
-                "subName": "Conventional Ambulance",
-                "subPrice": 6.5,
-                "subRating": 4.5,
-                "subCategoryButton": "View Details"
-            },
-            {
-                "subId": 14,
-                "subPicture": "https://m.media-amazon.com/images/I/517jIp0J3nL._SL1025_.jpg",
-                "subName": "Life Support Ambulance",
-                "subPrice": 5.8,
-                "subRating": 4.5,
-                "subCategoryButton": "View Details"
-            },
-            {
-                "subId": 15,
-                "subPicture": "https://m.media-amazon.com/images/I/611JJhFFfpL._AC_SY355_.jpg",
-                "subName": "Cutaway Ambulances",
-                "subPrice": 5.9,
-                "subRating": 4.5,
-                "subCategoryButton": "View Details"
-            }
-        ]
+        "category": "Ambulance"
     },
     {
-        "_id": 4,
-        "picture": "https://cdn.shopify.com/s/files/1/0047/7505/1377/products/4_1000x.jpg",
+                
+        "subPicture": "https://st4.depositphotos.com/18588246/20454/i/600/depositphotos_204549414-stock-photo-toy-metal-car-children-adults.jpg",
+        "name": "Conventional Ambulance",
+        "price": 6.5,
+        "seller_name": "Disney inc",
+        "seller_email": "vendor@company.com",
+        "quantity": 492,
+        "rating": 4.5,
+        "detailsButton": "View Details",
+        "category": "Ambulance"
+    },
+    {
+        
+        "subPicture": "https://m.media-amazon.com/images/I/517jIp0J3nL._SL1025_.jpg",
+        "name": "Life Support Ambulance",
+        "price": 5.8,
+        "seller_name": "Disney inc",
+        "seller_email": "vendor@company.com",
+        "quantity": 384,
+        "rating": 4.5,
+        "detailsButton": "View Details",
+        "category": "Ambulance"
+    },
+    {
+        
+        "subPicture": "https://m.media-amazon.com/images/I/611JJhFFfpL._AC_SY355_.jpg",
+        "name": "Cutaway Ambulances",
+        "price": 5.9,
+        "seller_name": "Disney inc",
+        "seller_email": "vendor@company.com",
+        "quantity": 239,
+        "rating": 4.5,
+        "detailsButton": "View Details",
+        "category": "Ambulance"
+    },
+    {
+        
+        "subPicture": "https://cdn.shopify.com/s/files/1/0047/7505/1377/products/4_1000x.jpg",
         "name": "Van",
         "price": 6.4,
+        "seller_name": "Disney inc",
+        "seller_email": "vendor@company.com",
+        "quantity": 631,
         "rating": 4.0,
-        "detailsButton": "View Details",
-        "subcategory": [
-            {
-                "subId": 16,
-                "subPicture": "https://m.media-amazon.com/images/I/61BhZfUy5dS._AC_SL1500_.jpg",
-                "subName": "Cargo Van",
-                "subPrice": 6.55,
-                "subRating": 4.5,
-                "subCategoryButton": "View Details"
-            },
-            {
-                "subId": 17,
-                "subPicture": "https://m.media-amazon.com/images/I/41G70WSTyXL._SX425_.jpg",
-                "subName": "Camper Van",
-                "subPrice": 6.45,
-                "subRating": 4.5,
-                "subCategoryButton": "View Details"
-            },
-            {
-                "subId": 18,
-                "subPicture": "https://rockwellantiquesdallas.com/wp-content/uploads/2017/08/Vintage-1980s-Zee-Toys-Dr-Pepper-Delivery-Truck.jpg",
-                "subName": "Delivery Van",
-                "subPrice": 7.55,
-                "subRating": 4.5,
-                "subCategoryButton": "View Details"
-            }
-        ]
+        "detailsButton": "View Details" ,
+        "category": "Van"
     },
     {
-        "_id": 5,
-        "picture": "https://i.ebayimg.com/images/g/HDEAAOSwZrtes81w/s-l1600.jpg",
+                
+        "subPicture": "https://m.media-amazon.com/images/I/61BhZfUy5dS._AC_SL1500_.jpg",
+        "name": "Cargo Van",
+        "price": 6.55,
+        "seller_name": "Disney inc",
+        "seller_email": "vendor@company.com",
+        "quantity": 135,
+        "rating": 4.5,
+        "detailsButton": "View Details",
+        "category": "Van"
+    },
+    {
+        
+        "subPicture": "https://m.media-amazon.com/images/I/41G70WSTyXL._SX425_.jpg",
+        "name": "Camper Van",
+        "price": 6.45,
+        "seller_name": "Disney inc",
+        "seller_email": "vendor@company.com",
+        "quantity": 356,
+        "rating": 4.5,
+        "detailsButton": "View Details",
+        "category": "Van"
+    },
+    {
+        
+        "subPicture": "https://rockwellantiquesdallas.com/wp-content/uploads/2017/08/Vintage-1980s-Zee-Toys-Dr-Pepper-Delivery-Truck.jpg",
+        "name": "Delivery Van",
+        "price": 7.55,
+        "seller_name": "Disney inc",
+        "seller_email": "vendor@company.com",
+        "quantity":236,
+        "rating": 4.5,
+        "detailsButton": "View Details",
+        "category": "Van"
+    },
+    {
+        
+        "subPicture": "https://i.ebayimg.com/images/g/HDEAAOSwZrtes81w/s-l1600.jpg",
         "name": "Bus",
         "price": 5.87,
+        "seller_name": "Disney inc",
+        "seller_email": "vendor@company.com",
+        "quantity": 461,
         "rating": 4.6,
-        "detailsButton": "View Details",
-        "subcategory": [
-            {
-                "subId": 19,
-                "subPicture": "https://i5.walmartimages.com/asr/081fdae8-55ce-4a0b-87bb-14e2fc5b8f9f.77ee8792c02338d831f82bfe686a19c8.jpeg?",
-                "subName": "School Bus",
-                "subPrice": 5.64,
-                "subRating": 4.5,
-                "subCategoryButton": "View Details"
-            },
-            {
-                "subId": 20,
-                "subPicture": "https://static-01.daraz.com.bd/p/5d0139debd6c2e088a5cb54229afb0ee.jpg",
-                "subName": "Double-Decker Bus",
-                "subPrice": 4.65,
-                "subRating": 4.5,
-                "subCategoryButton": "View Details"
-            },
-            {
-                "subId": 21,
-                "subPicture": "https://ae01.alicdn.com/kf/Sb7b3751b90fd4eb293c6b6890c19ab4bG/1-50-Scale-SETRA-Luxury-Coach-Bus-Toy-Car-Proswon-Diecast-Model-Pull-Back-Sound-Light.jpg",
-                "subName": "Coach Bus",
-                "subPrice": 6.42,
-                "subRating": 4.5,
-                "subCategoryButton": "View Details"
-            }
-        ]
+        "detailsButton": "View Details" ,
+        "category": "Bus"
     },
     {
-        "_id": 6,
-        "picture": "https://m.media-amazon.com/images/I/712Qd71eiYL._SL1500_.jpg",
+                
+        "subPicture": "https://i5.walmartimages.com/asr/081fdae8-55ce-4a0b-87bb-14e2fc5b8f9f.77ee8792c02338d831f82bfe686a19c8.jpeg?",
+        "name": "School Bus",
+        "price": 5.64,
+        "seller_name": "Disney inc",
+        "seller_email": "vendor@company.com",
+        "quantity": 438,
+        "rating": 4.5,
+        "detailsButton": "View Details",
+        "category": "Bus"
+    },
+    {
+        
+        "subPicture": "https://static-01.daraz.com.bd/p/5d0139debd6c2e088a5cb54229afb0ee.jpg",
+        "name": "Double-Decker Bus",
+        "price": 4.65,
+        "seller_name": "Disney inc",
+        "seller_email": "vendor@company.com",
+        "quantity": 325,
+        "rating": 4.5,
+        "detailsButton": "View Details",
+        "category": "Bus"
+    },
+    {
+        
+        "subPicture": "https://ae01.alicdn.com/kf/Sb7b3751b90fd4eb293c6b6890c19ab4bG/1-50-Scale-SETRA-Luxury-Coach-Bus-Toy-Car-Proswon-Diecast-Model-Pull-Back-Sound-Light.jpg",
+        "name": "Coach Bus",
+        "price": 6.42,
+        "seller_name": "Disney inc",
+        "seller_email": "vendor@company.com",
+        "quantity": 652,
+        "rating": 4.5,
+        "detailsButton": "View Details",
+        "category": "Bus"
+    },
+    {
+        
+        "subPicture": "https://m.media-amazon.com/images/I/712Qd71eiYL._SL1500_.jpg",
         "name": "Truck",
         "price": 4.93,
+        "seller_name": "Disney inc",
+        "seller_email": "vendor@company.com",
+        "quantity": 154,
         "rating": 4.3,
         "detailsButton": "View Details",
-        "subcategory": [
-            {
-                "subId": 22,
-                "subPicture": "https://i.ebayimg.com/images/g/aIcAAOSwh~peU~3O/s-l1600.jpg",
-                "subName": "Pickup Truck",
-                "subPrice": 5.12,
-                "subRating": 4.5,
-                "subCategoryButton": "View Details"
-            },
-            {
-                "subId": 23,
-                "subPicture": "https://www.constructionscalemodels.com/images/thumbs/0027042_mack-box-truck-ryder.jpg",
-                "subName": "Box Truck",
-                "subPrice": 6.45,
-                "subRating": 4.5,
-                "subCategoryButton": "View Details"
-            },
-            {
-                "subId": 24,
-                "subPicture": "https://m.media-amazon.com/images/I/71FiZ7LNGpL.jpg",
-                "subName": "Dump Truck",
-                "subPrice": 4.65,
-                "subRating": 4.5,
-                "subCategoryButton": "View Details"
-            }
-        ]
+        "category": "Truck"
+
+    },
+    {
+                
+        "subPicture": "https://i.ebayimg.com/images/g/aIcAAOSwh~peU~3O/s-l1600.jpg",
+        "name": "Pickup Truck",
+        "price": 5.12,
+        "seller_name": "Disney inc",
+        "seller_email": "vendor@company.com",
+        "quantity": 964,
+        "rating": 4.5,
+        "detailsButton": "View Details",
+        "category": "Truck"
+    },
+    {
+        
+        "subPicture": "https://www.constructionscalemodels.com/images/thumbs/0027042_mack-box-truck-ryder.jpg",
+        "name": "Box Truck",
+        "price": 6.45,
+        "seller_name": "Disney inc",
+        "seller_email": "vendor@company.com",
+        "quantity": 652,
+        "rating": 4.5,
+        "detailsButton": "View Details",
+        "category": "Truck"
+    },
+    {
+        
+        "subPicture": "https://m.media-amazon.com/images/I/71FiZ7LNGpL.jpg",
+        "name": "Dump Truck",
+        "price": 4.65,
+        "seller_name": "Disney inc",
+        "seller_email": "vendor@company.com",
+        "quantity": 423,
+        "rating": 4.5,
+        "detailsButton": "View Details",
+        "category": "Truck"
     }
     
 ]
