@@ -19,7 +19,7 @@ const AddACars = () => {
         const newCar ={photoUrl, productName, sellerName, email, subCategory, price, rating, availableQuantity}
         console.log(newCar)
 
-        fetch('http://localhost:5000/car', {
+        fetch('http://localhost:5000/addCar', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
