@@ -1,14 +1,7 @@
 `
 Main Requirements
 
-1.  Focus on making the website visually appealing. Ensure that
-
-Color contrast is pleasing to the eye
-The website does not have a gobindo design
-The website has proper alignment and space
-If needed, customize the design of any component you are taking from any component library. (For example, you are using daisy ui & have taken a card component from Daisy, if needed, customize the styling of the card to make it reasonable rather than just copy & paste it.) 
-
-2.  Make sure to keep the navbar and footer on all the pages except on the 404-page. Create a reasonable and meaningful footer. --- done
+1.  Focus on making the website visually appealing. Ensure that  --- done
 
 3.  Your website should have a navbar with the Website logo, Website name, Home, All cars, My cars, Add A car, Blogs, and User profile picture.
 Note: The User profile picture, Add A car and My cars on the navbar are conditional based on login. If the user is logged in, the navbar will show the profile picture; otherwise, it will show the Login button. If the username is available, the user's name will be visible when the mouse hovers over the profile picture.

@@ -1,4 +1,4 @@
-import { data } from 'autoprefixer';
+ 
 import { useState, useEffect } from 'react';
 
 const Gallary = () => {
@@ -7,10 +7,10 @@ const Gallary = () => {
   const [showAllCards, setShowAllCards] = useState(false);
 
   useEffect(() => {
-    fetch('http://localhost:5000/cars')
+    fetch('https://toy-marketplace-server-side-sigma.vercel.app/cars')
       .then(res => res.json())
       .then(data => setGallery(data))
-      console.log(data)
+    
   }, []);
 
   const displayedCards = showAllCards ? gallery : gallery.slice(0, 6);
@@ -39,13 +39,13 @@ const Gallary = () => {
 };
 
 const GallaryCard = ({ cars }) => {
-  const { pictureUrl, name } = cars;
+  const { subPicture, name } = cars;
 
   return (
     <div>
       <div className="card w-96 bg-base-100 shadow-xl">
         <figure className="px-10 pt-10">
-          <img src={pictureUrl} alt="Car" className="rounded-xl" />
+          <img src={subPicture} alt="Car" className="rounded-xl" />
         </figure>
         <div className="card-body items-center text-center">
           <h2 className="card-title">{name}</h2>
