@@ -40,6 +40,8 @@ const MyCars = () => {
                             <th>Price</th> 
                             <th>Rating</th>   
                             <th>Quantity</th>   
+                            <th>Update</th>    
+                            <th>Delete</th>    
 
 
                             <th></th>
