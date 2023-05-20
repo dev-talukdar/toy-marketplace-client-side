@@ -117,11 +117,4 @@ Give your website name. The website title will be changed according to the route
 
 Make the component name, folder structure, and route name meaningful. If needed, add comments.
 
-
-car
-truck
-bus
-van
-Ambulance
-Police car
 `
