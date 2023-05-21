@@ -14,7 +14,7 @@ const SingleCar = () => {
                     >
 
                         <img  src={subPicture}
-                            className="object-cover w-80% h-full scale-80 group-hover:scale-110 transition-all duration-400"
+                            className="object-cover w-80% h-full scale-80 group-hover:scale-110 transition-all duration-1600"
                             alt="" />
 
                          
@@ -26,14 +26,14 @@ const SingleCar = () => {
 
                     <div className=" mb-5 ">
                         <div className="">
-                            <h4 className="text-xl text-sky-500">Seller: {seller_name}</h4>
-                            <h4 className="text-xl text-sky-500">Contact: {seller_email}</h4>
-                            <h4 className="text-xl text-sky-500">Category: {category}</h4>
+                            <h4 className="text-xl text-orange-400">Seller: {seller_name}</h4>
+                            <h4 className="text-xl text-orange-400">Email: {seller_email}</h4>
+                            <h4 className="text-xl text-orange-400">Category: {category}</h4>
                         </div>
                         <div className=" ">
-                            <h4 className="text-xl text-sky-500">Price: $ {price}</h4>
-                            <h4 className="text-xl text-sky-500">Rating: {rating}</h4>
-                            <h4 className="text-xl text-sky-500">Items left: {quantity}</h4>
+                            <h4 className="text-xl text-orange-400">Price: $ {price}</h4>
+                            <h4 className="text-xl text-orange-400">Rating: {rating}</h4>
+                            <h4 className="text-xl text-orange-400">Items left: {quantity}</h4>
                         </div>
                     </div>
 
@@ -45,8 +45,8 @@ const SingleCar = () => {
 
                     <div className="flex justify-center gap-x-3">
                         <Link to="/track_order.html"
-                            className=" px-5 py-2 border    transition-all outline-none bg-black border-black text-white hover:text-black hover:bg-white font-bold">
-                            Add</Link>
+                            className=" px-5 py-2 border    transition-all outline-none bg-orange-400 border-orange-400 text-white hover:text-orange-400 hover:bg-white font-bold">
+                            Add to Cart</Link>
                         <Link to="/track_order.html"
                             className="px-5 py-2 border     transition-all outline-none bg-white border-black text-black hover:text-white hover:bg-black font-bold">
                             View</Link>

@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import AllCarCards from "./AllCarCards";
+import useTitle from "../../hooks/useTitle";
 
 
 const AllCars = () => {
 
     const [allCars, setAllCars] = useState([]);
+    useTitle('Wheels Ville | All Cars')
 
     useEffect(() => {
         fetch('https://toy-marketplace-server-side-sigma.vercel.app/cars')

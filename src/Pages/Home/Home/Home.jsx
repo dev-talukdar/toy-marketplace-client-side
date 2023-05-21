@@ -1,7 +1,8 @@
+import useTitle from "../../../hooks/useTitle";
 import HomeBannerOne from "../../HomeBannerOne/HomeBannerOne";
+import HomeBannerTwo from "../../HomeBannerOne/HomeBannerTwo";
 import Banner from "../../Shared/Banner/Banner";
-import AboutUs from "../AboutUs/AboutUs";
-import CategoryCars from "../CategoryCars/CategoryCars";
+import AboutUs from "../AboutUs/AboutUs";  
 import Gallary from "../Gallary/Gallary";
 import Testimonial from "../Testimonial/Testimonial";
 
@@ -10,13 +11,14 @@ import Testimonial from "../Testimonial/Testimonial";
  
 
 const Home = () => {
+    useTitle('Wheels Ville | Home')
     return (
         <div>
-            <HomeBannerOne></HomeBannerOne>
            <Banner></Banner>
            <Gallary></Gallary>
-           <CategoryCars></CategoryCars>
+            <HomeBannerOne></HomeBannerOne> 
            <Testimonial></Testimonial>
+           <HomeBannerTwo></HomeBannerTwo>
            <AboutUs></AboutUs>
         </div>
     );

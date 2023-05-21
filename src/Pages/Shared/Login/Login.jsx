@@ -4,10 +4,12 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Provider/AuthProvider";
 import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
 import app from "../../../Firebase/firebase.config";
+import useTitle from "../../../hooks/useTitle";
 
  
 
 const Login = () => {
+    useTitle('Wheels Ville | Login')
     const {signIn} = useContext(AuthContext)
     const navigate = useNavigate();
     const location = useLocation();

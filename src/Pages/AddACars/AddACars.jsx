@@ -1,6 +1,9 @@
  import Swal from "sweetalert2";
+import useTitle from "../../hooks/useTitle";
 
 const AddACars = () => {
+
+    useTitle('Wheels Ville | Add a Cars')
 
     const handleAddCar = event => {
         event.preventDefault()

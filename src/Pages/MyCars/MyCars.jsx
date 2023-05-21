@@ -2,12 +2,14 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import MyCarRow from "./MyCarRow";
 import Swal from "sweetalert2";
+import useTitle from "../../hooks/useTitle";
 
 
 
 const MyCars = () => {
     const { user } = useContext(AuthContext);
     const [addCar, setAddCar] = useState([]);
+    useTitle('Wheels Ville | My Cars')
 
     const url = `https://toy-marketplace-server-side-sigma.vercel.app/addCar?email=${user?.email}`;
 

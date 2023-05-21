@@ -35,14 +35,9 @@ Note: you can show the update form in a modal or another route. --partially done
 -------------------------------------------------->
 
 Bonus Requirements
-Commits & readme: 
-
-Create a readme for client-side and write about your project (at least 5 bullet points). ** Remember to add your client-side live link to your website here.** 
-
+ 
 Use the AOS Package in the home page. At least in one place on the home page. Using AOS on other pages is optional.
 
-On the My cars page, you must implement a sorting system to sort the cars in descending and ascending orders based on the price. (Explore MongoDB sorting operation & implement it on the backend). The design of the sorting system depends on you.
-
-Give your website name. The website title will be changed according to the route you are clicking. Suppose your website name is PHero. Then, on the ‘about’ route, your website title will be ‘PHero | About us’. 
+On the My cars page, you must implement a sorting system to sort the cars in descending and ascending orders based on the price. (Explore MongoDB sorting operation & implement it on the backend). The design of the sorting system depends on you. 
 
 `

@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../../Provider/AuthProvider";
 import { getAuth, updateProfile } from "firebase/auth";
 import app from "../../../Firebase/firebase.config";
+import useTitle from "../../../hooks/useTitle";
 
 const auth = getAuth(app)
 
  
 
 const Register = () => {
+    useTitle('Wheels Ville | Register')
     const [error, setError] = useState('')
     const {createUser} = useContext(AuthContext)
 

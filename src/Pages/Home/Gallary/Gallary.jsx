@@ -1,7 +1,8 @@
- import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Gallary = () => {
-  
+
   const [gallery, setGallery] = useState([]);
   const [showAllCards, setShowAllCards] = useState(false);
 
@@ -9,7 +10,7 @@ const Gallary = () => {
     fetch('https://toy-marketplace-server-side-sigma.vercel.app/cars')
       .then(res => res.json())
       .then(data => setGallery(data))
-    
+
   }, []);
 
   const displayedCards = showAllCards ? gallery : gallery.slice(0, 6);
@@ -38,16 +39,22 @@ const Gallary = () => {
 };
 
 const GallaryCard = ({ cars }) => {
-  const { subPicture, name } = cars;
+  const { _id, subPicture, name, price, seller_name, detailsButton } = cars;
 
   return (
-    <div>
-      <div className="card w-96 bg-base-100 shadow-xl">
+    <div className="card-container" data-aos="fade-up">
+      <div className="card w-96 bg-base-100 shadow-xl ">
         <figure className="px-10 pt-10">
-          <img src={subPicture} alt="Car" className="rounded-xl" />
+          <img src={subPicture} alt="Shoes" className="rounded-xl" />
         </figure>
         <div className="card-body items-center text-center">
           <h2 className="card-title">{name}</h2>
+
+        </div>
+        <div className='text-center mb-9'>
+          <h2 className=' font-semibold'>price: ${price}</h2>
+          <h2 className='mb-6 font-semibold'>seller: {seller_name}</h2>
+          <Link to={`/singleCar/${_id}`}><button className="btn bg-orange-600 border-none">{detailsButton}</button></Link>
         </div>
       </div>
     </div>
