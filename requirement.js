@@ -28,14 +28,9 @@ Show 20 results by default by using limit
 Implement a search system on this page, based on the car name.
 
 
-Without logging in, if a user clicks on the View Details button, they will be redirected to the Login Page. Make sure to take the user to the Details Page after the user successfully logs in.
+Without logging in, if a user clicks on the View Details button, they will be redirected to the Login Page. Make sure to take the user to the Details Page after the user successfully logs in. 
 
-
-8.  Single car details route will be a private route:
-
-After clicking on the View Details button, he/ she will be redirected to the cars Details route ( /car/:id ) containing the information ( picture, car name, seller name, seller email, price, rating, available quantity, and detail description)
-
-(optional) If possible, display the view details in a modal
+8. -- done 
 
 
 9.   Add A car page will be a private route: 

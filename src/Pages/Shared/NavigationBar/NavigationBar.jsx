@@ -81,7 +81,7 @@ const NavigationBar = () => {
                             <FaUserAlt></FaUserAlt></span>
                             <button className=" " onClick={handleLogIn}>Log In </button>
                             {user &&
-                                <div className="flex text-purple-600 gap-2">{user.displayName}
+                                <div className="flex text-purple-600 gap-2 avatar">{user.displayName}
                                     <img className="w-24 rounded-xl" style={{ height: "30px", width: "30px" }} src={user.photoURL} alt="" />
                                 </div>}
                         </div>
