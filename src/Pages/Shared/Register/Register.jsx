@@ -1,6 +1,10 @@
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../Provider/AuthProvider";
+import { getAuth, updateProfile } from "firebase/auth";
+import app from "../../../Firebase/firebase.config";
+
+const auth = getAuth(app)
 
  
 
@@ -17,8 +21,8 @@ const Register = () => {
         const email = form.email.value;
         const password = form.password.value;
         const confirm = form.confirm.value;
-        const photo = form.photoUrl.value;
-        console.log(name, email, password, confirm, photo)
+        const photoUrl = form.photoUrl.value;
+        console.log(name, email, password, confirm, photoUrl)
 
         setError('')
 
@@ -31,10 +35,22 @@ const Register = () => {
             return 
         }
 
-        createUser(email, password)
+        createUser(email, password, name, photoUrl)
         .then(result => {
             const loggedUser = result.user;
             console.log(loggedUser)
+
+            updateProfile(auth.currentUser, {
+                displayName: name, photoURL: photoUrl
+            })
+            .then(() =>{
+
+            })
+            .catch((error) => {
+                console.log(error)
+
+            });
+
             form.reset(); 
         })
         .catch(error => {

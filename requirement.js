@@ -1,6 +1,5 @@
 ` 
-3.  Your website should have a navbar with the Website logo, Website name, Home, All cars, My cars, Add A car, Blogs, and User profile picture.
-Note: The User profile picture, Add A car and My cars on the navbar are conditional based on login. If the user is logged in, the navbar will show the profile picture; otherwise, it will show the Login button. If the username is available, the user's name will be visible when the mouse hovers over the profile picture. 
+3. If the username is available, the user's name will be visible when the mouse hovers over the profile picture. -- few task left
 
 5.   Home page:  
 Shop by category- Implement a tab system for Shop by category section. Explore React-tabs, or you can implement this using custom CSS. There will be 3 tabs, each containing sub-categories of the category you have chosen.
@@ -49,17 +48,13 @@ Note: you can show the update form in a modal or another route. --partially done
 
 > **Note:** If a user logs in they will only see the cars they have added. The user cannot see the cars other users added.
 
-11.  For all the CRUD operations, show relevant toast/ notification/ anything with a meaningful message 
-
-13. ----done 
+11.  ----partially done 
 
 -------------------------------------------------->
 
 Bonus Requirements
-Commits & readme:
+Commits & readme: 
 
-Minimum 18 meaningful git commits on the client-side repository.
-Minimum 8 meaningful commits on the server-side repository.
 Create a readme for client-side and write about your project (at least 5 bullet points). ** Remember to add your client-side live link to your website here.** 
 
 Use the AOS Package in the home page. At least in one place on the home page. Using AOS on other pages is optional.

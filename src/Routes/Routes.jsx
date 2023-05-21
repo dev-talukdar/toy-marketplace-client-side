@@ -12,6 +12,7 @@ import NotFound from "../Pages/NotFound/NotFound";
 import Register from "../Pages/Shared/Register/Register";
 import PrivateRoute from "./PrivateRoute";
 import UpdateCar from "../Pages/UpdateCar/UpdateCar";
+import SingleCar from "../Pages/Shared/SingleCar/SingleCar";
 
 const router = createBrowserRouter([
     {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
             {
                 path: 'allCars',
                 element: <AllCars></AllCars>
+            },
+            {
+                path: 'singleCar',
+                element: <PrivateRoute><SingleCar></SingleCar></PrivateRoute>
             },
             {
                 path: 'addCars',
