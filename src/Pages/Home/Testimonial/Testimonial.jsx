@@ -58,7 +58,7 @@ const Testimonial = () => {
                             <h2 className="card-title">
                                                                 
                             </h2>
-                            <p>I was amazed by the quality and variety of toys available on this website. My kids absolutely love their new toys, and I could not be happier with my purchase.- Sarah</p>
+                            <p>The toys I received were exactly as described and arrived in perfect condition. The prices were reasonable, and the shipping was fast. I will definitely be buying from this website again.  - Emily</p>
                              
                         </div> 
                     </div>
@@ -74,7 +74,7 @@ const Testimonial = () => {
                             <h2 className="card-title">
                                                                 
                             </h2>
-                            <p>I was amazed by the quality and variety of toys available on this website. My kids absolutely love their new toys, and I could not be happier with my purchase.- Sarah</p>
+                            <p> As a parent, safety is my top priority when buying toys. I appreciate that this seller ensures all their products meet the highest safety standards. I feel confident in giving these toys to my children.  - Lisa</p>
                              
                         </div> 
                     </div>
@@ -90,7 +90,7 @@ const Testimonial = () => {
                             <h2 className="card-title">
                                                                 
                             </h2>
-                            <p>I was amazed by the quality and variety of toys available on this website. My kids absolutely love their new toys, and I could not be happier with my purchase.- Sarah</p>
+                            <p>I ve been a loyal customer of this toy seller for years, and they never disappoint. The quality of their toys is consistently excellent, and their customer service is outstanding. Keep up the great work! - Mark</p>
                              
                         </div> 
                     </div>
@@ -106,7 +106,7 @@ const Testimonial = () => {
                             <h2 className="card-title">
                                                                 
                             </h2>
-                            <p>I was amazed by the quality and variety of toys available on this website. My kids absolutely love their new toys, and I could not be happier with my purchase.- Sarah</p>
+                            <p>The toys from this seller have brought so much joy to my little ones. Seeing their smiles and excitement is priceless. Thank you for providing such amazing toys that bring happiness to children  - Daniel</p>
                              
                         </div> 
                     </div>
