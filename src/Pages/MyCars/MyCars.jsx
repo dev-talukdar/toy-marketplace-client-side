@@ -21,6 +21,17 @@ const MyCars = () => {
 
     const handleDelete = id => {
         const proceed = confirm ('Are you sure ?')
+
+        // Swal.fire({
+        //     title: "Are You Sure",
+        //     text: "You won't be able to revert this",
+        //     icon: "warning",
+        //     showCancelButton: true,
+        //     confirmButtonColor: '#3085d6',
+        //     cancelButtonColor:'#d33',
+        //     confirmButtonText: "Yes Delete it !" 
+        // })
+
         if(proceed) {
            fetch(`https://toy-marketplace-server-side-sigma.vercel.app/addCar/${id}`, {
                method: 'DELETE'

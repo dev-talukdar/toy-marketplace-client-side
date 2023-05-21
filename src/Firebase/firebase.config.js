@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 
  
 const firebaseConfig = {
-  apiKey: "AIzaSyAWsnPUaZZXNihnse7JEJldXmTAJL8fuCk",
-  authDomain: "wheels-ville.firebaseapp.com",
-  projectId: "wheels-ville",
-  storageBucket: "wheels-ville.appspot.com",
-  messagingSenderId: "649940423446",
-  appId: "1:649940423446:web:a9130bdaebbce09ee1f637"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId
 };
 
 // Initialize Firebase

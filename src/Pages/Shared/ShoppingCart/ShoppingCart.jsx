@@ -1,16 +1,7 @@
-import { useLoaderData } from "react-router-dom";
-
  
-
- 
-
-const ShoppingCart = () => { 
-    const cars = useLoaderData();
-    const {name, price} = cars
+const ShoppingCart = () => {  
     return (
-        <div>
-            <h2>book service: {name}</h2>
-            <h2>book service: {price}</h2>
+        <div> 
         </div>
     );
 };

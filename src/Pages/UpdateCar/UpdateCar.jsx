@@ -1,8 +1,12 @@
- import Swal from "sweetalert2";
+ 
+ 
+import Swal from "sweetalert2";
 
-const AddACars = () => {
+ 
 
-    const handleAddCar = event => {
+const UpdateCar = ( ) => {  
+
+    const handleUpdateCar = event => {
         event.preventDefault()
 
         const form = event.target;
@@ -16,23 +20,22 @@ const AddACars = () => {
         const rating = form.rating.value;
         const availableQuantity = form.availableQuantity.value;
 
-        const newCar ={photoUrl, productName, sellerName, email, subCategory, price, rating, availableQuantity}
-        console.log(newCar)
+        const updateCar ={photoUrl, productName, sellerName, email, subCategory, price, rating, availableQuantity} 
 
-        fetch('https://toy-marketplace-server-side-sigma.vercel.app/addCar', {
-            method: 'POST',
+        fetch(`https://toy-marketplace-server-side-sigma.vercel.app/addCar/${_id}`, {
+            method: 'PUT',
             headers: {
                 'content-type': 'application/json'
             },
-            body:JSON.stringify(newCar)
+            body:JSON.stringify(updateCar)
         })
         .then(res => res.json())
         .then(data => {
              console.log(data)
-             if(data.insertedId){
+             if(data.modifiedCount > 0){
                 Swal.fire({
                     title: "Success",
-                    text: "A new car added successfully",
+                    text: "Car updated successfully",
                     icon: "success",
                     confirmButtonText: "Great" 
                 })
@@ -46,7 +49,7 @@ const AddACars = () => {
     return (
         <div className="container mx-auto mt-16 mb-16">
             <h2 className='text-center font-medium'>Add A Car</h2>
-            <form onSubmit={handleAddCar} className="px-4"  >
+            <form onSubmit={handleUpdateCar} className="px-4"  >
                 <div className="space-y-12">
                     <div className="border-b border-gray-900/10 pb-12">
 
@@ -129,11 +132,11 @@ const AddACars = () => {
 
                 <div className="mt-6 flex justify-center  gap-x-6">
                     <button type="button" className="text-sm font-semibold leading-6 text-gray-900">Cancel</button>
-                    <button type="submit" className="btn-btn-block rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Submit</button>
+                    <button type="submit" className="btn-btn-block rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Update Now</button>
                 </div>
             </form>
         </div>
     );
 };
 
-export default AddACars;
+export default UpdateCar;

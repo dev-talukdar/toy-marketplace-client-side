@@ -1,4 +1,5 @@
 import { FaPen, FaRegTimesCircle } from "react-icons/fa";  
+import { Link } from "react-router-dom";
 
 
 const MyCarRow = ({ addedCar, handleDelete }) => {
@@ -25,7 +26,7 @@ const MyCarRow = ({ addedCar, handleDelete }) => {
             <td>{rating}</td>
             <td>{availableQuantity}</td>
             <th>
-                <button className="btn btn-ghost btn-sm text-xl"><FaPen></FaPen> </button>
+                <Link to={`/updateCar/${_id}`}><button className="btn btn-ghost btn-sm text-xl"><FaPen></FaPen> </button></Link>
             </th>
             <th>
                 <button onClick={() => handleDelete(_id)} className="btn btn-ghost btn-sm text-xl"><FaRegTimesCircle></FaRegTimesCircle> </button>

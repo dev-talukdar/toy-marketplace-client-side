@@ -11,6 +11,7 @@ import Login from "../Pages/Shared/Login/Login";
 import NotFound from "../Pages/NotFound/NotFound";
 import Register from "../Pages/Shared/Register/Register";
 import PrivateRoute from "./PrivateRoute";
+import UpdateCar from "../Pages/UpdateCar/UpdateCar";
 
 const router = createBrowserRouter([
     {
@@ -29,6 +30,11 @@ const router = createBrowserRouter([
             {
                 path: 'addCars',
                 element: <PrivateRoute><AddACars></AddACars></PrivateRoute>
+                
+            },
+            {
+                path: 'updateCar/:id',
+                element: <PrivateRoute><UpdateCar></UpdateCar></PrivateRoute>, 
                 
             },
             {
@@ -53,8 +59,7 @@ const router = createBrowserRouter([
             },
             {
                 path: 'shoppingCart',
-                element: <ShoppingCart></ShoppingCart>,
-                loader: (params) => fetch(`https://toy-marketplace-server-side-sigma.vercel.app/cars/${params.id}`)
+                element: <ShoppingCart></ShoppingCart> 
             },
         ]
     }
