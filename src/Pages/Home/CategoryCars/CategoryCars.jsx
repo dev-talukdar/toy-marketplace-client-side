@@ -8,25 +8,30 @@ import CategoryCards from "./CategoryCards";
 const CategoryCars = () => {
 
     const [category, setCategory] = useState([]); 
+    const [activeTab, setActiveTab] =useState('PoliceCar');
      
 
     useEffect(() => {
         fetch('https://toy-marketplace-server-side-sigma.vercel.app/cars')
             .then(res => res.json())
             .then(data => setCategory(data))
-    }, []);
+    }, [activeTab]); 
+
+    const handleTabClick = tabName =>{
+        setActiveTab(tabName)
+    }
 
     return (
         <div className="flex justify-center mt-16 mb-16">
             <Tabs>
                 <TabList  >
                     <div className="flex gap-16 font-bold text-orange-600 bg-base-200 p-5 hover:cursor-pointer mb-4">
-                        <Tab >Car</Tab>
-                        <Tab>Police Car</Tab>
-                        <Tab>Ambulance</Tab>
-                        <Tab>Van</Tab>
-                        <Tab>Bus</Tab>
-                        <Tab>Truck</Tab>
+                        <Tab onClick={handleTabClick} >Car</Tab>
+                        <Tab  onClick={handleTabClick} >Police Car</Tab>
+                        <Tab  onClick={handleTabClick} >Ambulance</Tab>
+                        <Tab  onClick={handleTabClick} >Van</Tab>
+                        <Tab  onClick={handleTabClick} >Bus</Tab>
+                        <Tab  onClick={handleTabClick} >Truck</Tab>
                     </div>
                 </TabList>
 
@@ -36,7 +41,7 @@ const CategoryCars = () => {
                             <CategoryCards 
                             key={cars._id}
                             cars={cars}
-                            />
+                            ></CategoryCards>
 
                         })}
                         <figure className="px-10 pt-10">

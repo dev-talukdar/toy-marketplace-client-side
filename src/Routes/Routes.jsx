@@ -29,8 +29,9 @@ const router = createBrowserRouter([
                 element: <AllCars></AllCars>
             },
             {
-                path: 'singleCar',
-                element: <PrivateRoute><SingleCar></SingleCar></PrivateRoute>
+                path: 'singleCar/:_id',
+                element: <PrivateRoute><SingleCar></SingleCar></PrivateRoute>,
+                loader: ({params}) => fetch(`http://localhost:5000/cars/${params._id}`)
             },
             {
                 path: 'addCars',

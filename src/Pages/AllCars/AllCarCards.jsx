@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 
 
 const AllCarCards = ({ allCar }) => {
-    const { name, seller_name, category, price, quantity } = allCar; 
+    const { _id, name, seller_name, category, price, quantity } = allCar; 
     return (
         <tr>
 
@@ -15,7 +16,7 @@ const AllCarCards = ({ allCar }) => {
              
             <td>{quantity}</td>
             <th>
-                <button className="btn bg-orange-600 border-none btn-sm ">View Details</button>
+                <Link to={`/singleCar/${_id}`}><button className="btn bg-orange-600 border-none btn-sm ">View Details</button></Link>
             </th> 
         </tr>
 
