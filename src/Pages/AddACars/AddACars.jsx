@@ -19,7 +19,7 @@ const AddACars = () => {
         const newCar ={photoUrl, productName, sellerName, email, subCategory, price, rating, availableQuantity}
         console.log(newCar)
 
-        fetch('http://localhost:5000/addCar', {
+        fetch('https://toy-marketplace-server-side-sigma.vercel.app/addCar', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
