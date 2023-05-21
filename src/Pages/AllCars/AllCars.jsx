@@ -7,7 +7,7 @@ const AllCars = () => {
     const [allCars, setAllCars] = useState([]);
 
     useEffect(() => {
-        fetch('https://toy-marketplace-server-side-sigma.vercel.app/cars')
+        fetch('http://localhost:5000/cars')
             .then(res => res.json())
             .then(data => setAllCars(data))
 
@@ -16,15 +16,42 @@ const AllCars = () => {
 
     return (
         <div className="container mx-auto mt-16 mb-16">
-           {
-             allCars.map(allCar => <AllCarCards
-             key={allCar._id}
-             allCar={allCar}
-             ></AllCarCards>)
-           }
-            
-        </div>
-    );
+            <div className="overflow-x-auto w-full">
+                <table className="table w-full">
+                    {/* head */}
+                    <thead>
+                        <tr>
+                             
+                            <th>Photo</th>
+                            <th>Product Name</th>
+                            <th>Seller Name</th>
+                            <th>Seller email</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Rating</th>
+                            <th>Quantity</th>
+                            <th>View Details</th>
+                             
+
+
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            allCars.map(allCar => <AllCarCards
+                                key={allCar._id}
+                                allCar={allCar}
+                                ></AllCarCards>)
+                        }
+                    </tbody>
+
+
+                </table>
+
+            </div>
+            </div>
+            );
 };
 
-export default AllCars;
+            export default AllCars;

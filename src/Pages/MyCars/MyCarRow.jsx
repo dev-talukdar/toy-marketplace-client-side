@@ -7,11 +7,7 @@ const MyCarRow = ({ addedCar, handleDelete }) => {
     
     return (
         <tr>
-            <th>
-                <label>
-                    <input type="checkbox" className="checkbox" />
-                </label>
-            </th>
+             
             <td>
                 <div className="flex items-center space-x-3">
                     <div className="avatar">

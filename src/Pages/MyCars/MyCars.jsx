@@ -20,7 +20,7 @@ const MyCars = () => {
     }, []);
 
     const handleDelete = id => {
-        const proceed = confirm 
+        const proceed = confirm ('Are you sure ?')
         if(proceed) {
            fetch(`http://localhost:5000/addCar/${id}`, {
                method: 'DELETE'
@@ -43,19 +43,14 @@ const MyCars = () => {
    }
 
     return (
-        <div className="container mx-auto mt-16 mb-16">
+        <div className="container mx-auto mt-16 mb-96">
             
 
             <div className="overflow-x-auto w-full">
                 <table className="table w-full">
                     {/* head */}
                     <thead>
-                        <tr>
-                            <th>
-                                <label>
-                                    <input type="checkbox" className="checkbox" />
-                                </label>
-                            </th>
+                        <tr> 
                             <th>Photo</th>
                             <th>Product Name</th>
                             <th>Seller Name</th>

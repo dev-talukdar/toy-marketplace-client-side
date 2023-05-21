@@ -1,52 +1,31 @@
-import { Link } from "react-router-dom";
 
 
 const AllCarCards = ({ allCar }) => {
-    const { name, seller_name, quantity, detailsButton, category, price } = allCar
+    const { subPicture, name, seller_name, seller_email, category, price, rating, quantity } = allCar; 
     return (
+        <tr>
 
+            <td>
+                <div className="flex items-center space-x-3">
+                    <div className="avatar">
+                        <div className="w-24 rounded">
+                            <img src={subPicture} alt="Avatar Tailwind CSS Component" />
+                        </div>
+                    </div>
+                </div>
+            </td>
 
-        <table className="table w-full">
-
-            <thead>
-                <tr>
-                    <th>Seller Name</th>
-                    <th>Car Name</th>
-                    <th>Category</th>
-                    <th>Quantity</th>
-                    <th>Price</th>
-                    <th>Details</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>
-                        <p>{seller_name}</p>
-                    </td> 
-                <td>
-                    <p>{name}</p>
-                </td>
-
-                <td>
-                    <p>{category}</p>
-                </td>
-
-                <td>
-                    <p>{quantity}</p>
-                </td>
-
-                <td>
-                    <p>$ {price}</p>
-                </td>
-
-                <td>
-                     <Link ><button className="btn btn-xs bg-orange-600 border-none">{detailsButton}</button></Link>
-                </td>
-                </tr>
-            </tbody>  
-        </table>
-
+            <td> {name} </td>
+            <td>{seller_name}</td>
+            <td>{seller_email}</td>
+            <td>{category}</td>
+            <td>{price}</td>
+            <td>{rating}</td>
+            <td>{quantity}</td>
+            <th>
+                <button className="btn bg-orange-600 border-none btn-sm ">View Details</button>
+            </th> 
+        </tr>
 
     );
 };
