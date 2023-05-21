@@ -22,14 +22,7 @@ Note: When a user is not logged in and if he/ she clicks on the View Details but
 Extra Section: Add two relevant sections. Try to make them attractive. 
 
 
-have to do -- 7.  All cars page: Create an All cars page where you will see the cars all the users have added in the tabular form. Each row of the All cars table/list will have the following information:
-
-Seller: (if available) show the name of the person who posted the car
-car Name
-Sub-category
-Price
-Available Quantity
-View Details button
+7.  
 
 Show 20 results by default by using limit
 

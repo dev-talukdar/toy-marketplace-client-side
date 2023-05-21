@@ -21,7 +21,7 @@ const MyCarRow = ({ addedCar, handleDelete }) => {
             <td>{sellerName}</td>
             <td>{email}</td>
             <td>{subCategory}</td>
-            <td>{price}</td>
+            <td>$ {price}</td>
             <td>{rating}</td>
             <td>{availableQuantity}</td>
             <th>

@@ -9,7 +9,7 @@ const MyCars = () => {
     const { user } = useContext(AuthContext);
     const [addCar, setAddCar] = useState([]);
 
-    const url = `http://localhost:5000/addCar?email=${user?.email}`;
+    const url = `https://toy-marketplace-server-side-sigma.vercel.app/addCar?email=${user?.email}`;
 
     useEffect(() => {
         fetch(url)
@@ -22,7 +22,7 @@ const MyCars = () => {
     const handleDelete = id => {
         const proceed = confirm ('Are you sure ?')
         if(proceed) {
-           fetch(`http://localhost:5000/addCar/${id}`, {
+           fetch(`https://toy-marketplace-server-side-sigma.vercel.app/addCar/${id}`, {
                method: 'DELETE'
            })
            .then(res => res.json())

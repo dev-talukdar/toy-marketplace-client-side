@@ -7,7 +7,7 @@ const AllCars = () => {
     const [allCars, setAllCars] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/cars')
+        fetch('https://toy-marketplace-server-side-sigma.vercel.app/cars')
             .then(res => res.json())
             .then(data => setAllCars(data))
 
@@ -22,13 +22,11 @@ const AllCars = () => {
                     <thead>
                         <tr>
                              
-                            <th>Photo</th>
+                             
                             <th>Product Name</th>
-                            <th>Seller Name</th>
-                            <th>Seller email</th>
+                            <th>Seller Name</th> 
                             <th>Category</th>
-                            <th>Price</th>
-                            <th>Rating</th>
+                            <th>Price</th> 
                             <th>Quantity</th>
                             <th>View Details</th>
                              

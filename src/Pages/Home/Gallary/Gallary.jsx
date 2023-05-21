@@ -1,5 +1,4 @@
- 
-import { useState, useEffect } from 'react';
+ import { useState, useEffect } from 'react';
 
 const Gallary = () => {
   
@@ -7,7 +6,7 @@ const Gallary = () => {
   const [showAllCards, setShowAllCards] = useState(false);
 
   useEffect(() => {
-    fetch('cars.json')
+    fetch('https://toy-marketplace-server-side-sigma.vercel.app/cars')
       .then(res => res.json())
       .then(data => setGallery(data))
     

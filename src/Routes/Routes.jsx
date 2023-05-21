@@ -54,7 +54,7 @@ const router = createBrowserRouter([
             {
                 path: 'shoppingCart',
                 element: <ShoppingCart></ShoppingCart>,
-                loader: (params) => fetch(`https://toy-marketplace-server-side-dev-talukdar.vercel.app/cars/${params.id}`)
+                loader: (params) => fetch(`https://toy-marketplace-server-side-sigma.vercel.app/cars/${params.id}`)
             },
         ]
     }

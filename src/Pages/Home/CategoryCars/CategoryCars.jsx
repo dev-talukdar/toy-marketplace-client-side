@@ -11,7 +11,7 @@ const CategoryCars = () => {
      
 
     useEffect(() => {
-        fetch('http://localhost:5000/cars')
+        fetch('https://toy-marketplace-server-side-sigma.vercel.app/cars')
             .then(res => res.json())
             .then(data => setCategory(data))
     }, []);
