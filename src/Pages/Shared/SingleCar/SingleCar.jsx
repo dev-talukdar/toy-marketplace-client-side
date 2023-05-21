@@ -44,7 +44,7 @@ const SingleCar = () => {
 
 
                     <div className="flex justify-center gap-x-3">
-                        <Link to="/track_order.html"
+                        <Link to="/"
                             className=" px-5 py-2 border    transition-all outline-none bg-orange-400 border-orange-400 text-white hover:text-orange-400 hover:bg-white font-bold">
                             Add to Cart</Link>
                         <Link to="/track_order.html"
