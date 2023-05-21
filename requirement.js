@@ -51,7 +51,7 @@ Note: you can show the update form in a modal or another route. --partially done
 
 11.  For all the CRUD operations, show relevant toast/ notification/ anything with a meaningful message 
 
-13.  Use the Environment variable to hide the Firebase config keys and Mongodb credentials. 
+13. ----done 
 
 -------------------------------------------------->
 
